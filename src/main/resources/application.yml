@@ -1,0 +1,19 @@
+spring:
+  graphql:
+    websocket:
+      path: /subscriptions
+    graphiql:
+      enabled: true
+    schema:
+      printer:
+        enabled: true
+
+logging:
+  level:
+    org:
+      springframework:
+        web: debug
+        http: debug
+        graphql: debug
+    reactor:
+      netty: debug

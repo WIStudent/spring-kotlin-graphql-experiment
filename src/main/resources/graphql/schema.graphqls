@@ -1,0 +1,30 @@
+interface ListItem {
+  id: ID!
+}
+
+type Text implements ListItem {
+  id: ID!
+  text: String!
+}
+
+type Image implements ListItem {
+  id: ID!
+  src: String!
+}
+
+type MyList {
+  id: ID!
+  items: [ListItem!]!
+}
+
+type Query {
+  list(id: ID!): MyList
+}
+
+type Mutation {
+  sum(a: Float!, b: Float!): Float!
+}
+
+type Subscription {
+  number: Int!
+}

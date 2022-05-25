@@ -10,7 +10,7 @@ import reactor.core.publisher.Flux
 import java.time.Duration
 
 @Controller
-class Controller {
+class GraphqlController {
   
   @QueryMapping
   fun list(@Argument id: String): MyList? {
